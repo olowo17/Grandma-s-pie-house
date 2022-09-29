@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+/* Setting the variables */
+
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+
+body {
+    font-family: "Kaushan Script", cursive;
+    background: var(--mainWhite);
+    color: var(--mainBlack);
+  }
+
+  /* utilities */
+
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    justify-items: flex-end;
+  }
+
+  a:visited{
+    border: none;
+  }
+
+  .f{
+    margin: 20px auto;
+  }
+
+.center{
+  margin: 0 auto;
+}
+
+  .btn{
+    width: 250px;
+  }
+
+  .h1{
+    font-size: 90px;
+  }
+
+  .grid{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+  }
+
+
+  span{
+    margin-left: 10px;
+  }
+
+  /* navbar */
+  .navbar-nav a{
+    color: var(--mainPink);
+  }
+
+  .nav-link {
+    color: var(--mainPink);
+    transition: all 0.5s ease-in-out;
+  }
+  .nav-link:hover {
+    color: var(--mainBlack);
+  }
+
+  .toggler-icon {
+    font-size: 2.5rem;
+    color: var(--mainPink);
+  }
+
+  .order{
+    font-size: 20px;
+  }
+
+  .order-item{
+    color: var(--mainBlack);
+    border: 2px solid var(--mainBlack);
+    border-radius: 8px;
+    margin-right: 50px;
+
+
+  }
+
+  #y:hover{
+    background-color: var(--mainBlack);
+    color: var(--mainPink);
+    padding: 10px;
+    border-radius: 10px;
+    
+  }
+
+  .order-item:hover, .call:hover{
+    background-color: var(--mainPink);
+    color: var(--mainWhite);
+    border-color: var(--mainPink);
+    
+  }
+
+
+  /* banner */
+
+  .banner{
+    background-color:rgba(249, 228, 148, 0.5);
+    color:var(--mainWhite);
+    font-size: 40px;
+  }
+
+  .banner-title{
+    color: var(--mainPink);
+  }
+
+  .max-height{
+    min-height: calc(100vh - 76px);
+    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+    url("../img/headerBcg.jpeg") center/cover fixed;
+    position: relative;
+  }
+
+  .h{
+    margin: 0 auto;
+    justify-content: center;
+    align-self: center;
+    
+  }
+
+  .pink{
+    background-color: var(--mainPink);
+  }
+
+  .explore{
+    border:3px solid black;
+    color:var(--mainBlack);
+  }
+  .explore:hover, .btn:hover{
+    color: var(--mainPink);
+    background-color: var(--mainBlack);
+  }
+
+  h1{
+    letter-spacing: 3px;
+    font-size: 70px;
+  }
+
+
+.sweet1-container{
+  
+  position: relative;
+  margin-top: 40px;
+}
+
+.sweet1-container::before{
+  content: "";
+  outline: 10px solid var(--mainYellow);
+  /* outline-offset: 20px; */
+  z-index: -1;
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.sweet1-container:hover::before{
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.ourStore{
+  background-color: var(--mainGrey);
+}
+
+
+.img-container{
+  content: "";
+  position: relative;
+  transition:  all 1.0s ease-in-out;
+}
+
+.img-container:hover .img-fluid{
+  transform: scale(1.1);
+}
+  
+
+
+.store-item-icon{
+  position: absolute;
+  font-size: 30px;
+  padding: -10px;
+  border-radius: 10px;
+  display: none;
+  background-color: var(--mainYellow);
+  top: 0;
+  left: 0;
+}
+
+.img-container:hover .store-item-icon{
+  top:10px;
+  left: 20px;
+  display: block;
+
+}
+
+.store-item-icon:hover{
+  color: var(--mainPink)
+}
